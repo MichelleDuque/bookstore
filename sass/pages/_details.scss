@@ -1,0 +1,116 @@
+@use '../abstracts/variables' as d;
+
+#details-section{
+    background-color:  #A25772;
+}
+
+.books-photo img{
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.books-info h2{
+    font-size: 40px;
+    margin: 5px;
+}
+
+.books-info h3{
+    font-size: 20px;
+    color: black;
+    margin: 5px;
+}
+
+.books-info h4{
+    font-size: 17px;
+    color: black;
+    margin: 5px;
+}
+
+.books-info h5{
+    font-size: 15px;
+    color: black;
+}
+
+@media screen and (min-width:768px) {
+
+
+    .book-details{
+        display: flex;
+        align-items: center;
+    }
+
+    .book-details > * {
+        width:50%;
+        padding:1rem;
+    }
+
+    .books-photo img{
+        height: 450px;
+    }
+
+    .books-info h2{
+        font-size: 45px;
+    }
+
+    .books-info h3{
+        font-size: 30px;
+    }
+
+    .books-info h4{
+        font-size: 25px;
+    }
+
+    .books-info h5{
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+
+
+    .books-photo img{
+        height: 600px;
+    }
+
+    .books-info h2{
+        font-size: 70px;
+    }
+
+    .books-info h3{
+        font-size: 40px;
+    }
+
+    .books-info h4{
+        font-size: 30px;
+    }
+
+    .books-info h5{
+        font-size: 27px;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+
+
+    .books-photo img{
+        height: 700px;
+    }
+
+    .books-info h2{
+        font-size: 100px;
+    }
+
+    .books-info h3{
+        font-size: 60px;
+    }
+
+    .books-info h4{
+        font-size: 40px;
+    }
+
+    .books-info h5{
+        font-size: 37px;
+    }
+}

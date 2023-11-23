@@ -1,0 +1,73 @@
+@use '../abstracts/variables' as b;
+
+
+#burger-nav{
+  padding: 0;
+  background-color: transparent;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+  
+.hamburger {
+
+	position: relative;
+	display: block;
+	cursor: pointer;
+  	z-index: 100;
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+	text-align: left;
+}
+
+.hamburger img{
+	height: 50px;
+}
+
+
+.burger_menu {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: block;
+	z-index: 98;
+	background-color: #EEF5FF;
+	padding-top: 120px;
+	transition: 0.4s;
+	list-style-type: none
+}
+
+.burger_menu.is-active {
+	left: 0;
+}
+
+.burger_menu a {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	margin: 0 auto 16px;
+	text-align: center;
+	padding: 12px 16px;
+	background-color: b.$secondary-color;
+
+	color: #FFF;
+	text-decoration: none;
+}
+
+.burger_menu a:hover {
+	background-color: b.$primary-color;
+}
+
+@media (min-width: 768px) {
+	.burger_menu {
+		display: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+}
+  

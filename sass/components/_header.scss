@@ -1,0 +1,86 @@
+@use '../abstracts/variables' as p;
+
+#main-nav{
+    display: none;
+}
+
+#logo-section{
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#burger-nav{
+    background-color: transparent;
+}
+
+@media screen and (min-width:768px) {
+
+    #burger-nav{
+        display: none;
+    }
+
+    #main-nav{
+        background-color: transparent;
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    #main-nav ul{
+        padding: 0;
+    }
+
+    #main-nav li{
+        display:inline;
+        font-family: p.$body-font-family;
+    }
+
+    #main-nav li {
+        margin-right: 23px;
+     }
+
+     #main-nav ul li a{
+        font-size: 22px;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+        color: p.$secondary-color;
+    }
+
+    #main-nav li a:hover {
+        padding-bottom: 7px;
+        border-bottom: 2px solid p.$body-text-color;
+       }
+
+
+    #logo-section img{
+        height: 70px;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    #main-nav ul li a{
+        font-size: 27px;
+
+    }
+
+    #logo-section img{
+        height: 80px;
+    }
+
+}
+
+@media screen and (min-width:1920px){
+
+    #main-nav ul li a{
+        font-size: 35px;
+
+    }
+
+    #logo-section img{
+        height: 100px;
+    }
+
+
+}

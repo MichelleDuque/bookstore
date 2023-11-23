@@ -1,0 +1,138 @@
+@use '../abstracts/variables' as h;
+
+//Hero Image
+
+#home-section{
+    background-color: #A25772;
+    margin: 0;
+}
+
+.book-details{
+    background-color: transparent;
+}
+
+#hero-box{
+    padding: 0;
+    background-color: transparent;
+}
+
+#hero-box span{
+    color: h.$body-text-color;
+}
+
+#hero-box h2{
+    line-height: 1em
+}
+
+//Movies
+
+#book-section{
+    padding: 0;
+    margin: 0;
+}
+
+#book-list{
+    background-color: #EEF5FF;
+    border-radius: 0px;
+}
+
+.book_list{
+    margin-bottom: 50px;
+}
+
+.book_list img{
+    height: 300px;
+}
+
+.book_list h2{
+    font-size: 30px;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    border: solid 2px #7C93C3;
+    background: #9EB8D9;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: h.$body-font-family;
+}
+
+button a {
+    text-decoration: none;
+}
+
+
+@media screen and (min-width:768px) {
+
+    //Hero Image
+
+    #hero-box{
+        display: flex;
+        align-items: center;
+    }
+
+    #hero-box > * {
+        width:50%;
+        padding:1rem;
+    }
+
+
+    #hero-box h2{
+        font-size: 70px;
+        text-align: left;
+        // line-height: 1em
+    }
+
+    //Book Section
+
+    #book-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #book-list > * {
+        width:50%;
+        padding:1rem;
+    }
+
+    .book_list img{
+        height: 500px;
+    }
+
+    .book_list h2{
+        font-size: 35px;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+
+     //Hero Image
+
+     #hero-box h2{
+        font-size: 100px;
+    }
+
+    .book_list h2{
+        font-size: 45px;
+    }
+ 
+
+}
+
+@media screen and (min-width:1920px){
+
+     //Hero Image
+
+     #hero-box h2{
+        font-size: 200px;
+    }
+
+    .book_list h2{
+        font-size: 50px;
+    }
+
+}
