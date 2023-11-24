@@ -52,7 +52,7 @@ margin-bottom:50px;
 </nav>
 </header>
 
-<main id="main-home">
+<main>
         <section class="grid-con" id="home-section">
             <h2 class="hidden">Hero Section - Blackbird Bookstore</h2>
             <div class="box col-span-full m-col-start-3 m-col-end-11 l-col-span-full xl-col-span-full" id="hero-box">
@@ -81,6 +81,7 @@ margin-bottom:50px;
             </div>
 
         </section>
-        <script src="js/main.js"></script>
+     </main> 
+        <script src="js/main.js"></script> 
 </body>
 </html>

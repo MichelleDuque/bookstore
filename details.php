@@ -27,40 +27,43 @@ $results = mysqli_query($connect,$query);
 
 <header id="main-header" class="grid-con">
 
-<nav class="box m-col-start-6 m-col-end-8 l-col-start-6 l-col-end-8 xl-col-start- xl-col-end-8" id="main-nav">
-    <ul>
-        <li><a href="index.php">HOME</a></li>
-    </ul>
-</nav>
+        <nav class="box m-col-start-6 m-col-end-8 l-col-start-6 l-col-end-8 xl-col-start- xl-col-end-8" id="main-nav">
+            <ul>
+                <li><a href="index.php">HOME</a></li>
+            </ul>
+        </nav>
 
-<div class="box col-start-1 col-end-2 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13 xl-col-start-11 xl-col-end-13" id="logo-section">
-    <a href="index.php"><img id="image-logo" src="images/logo.png" alt="Blackbird Bookstore Logo"></a>
-</div>
+        <div class="box col-start-1 col-end-2 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13 xl-col-start-11 xl-col-end-13" id="logo-section">
+            <a href="index.php"><img id="image-logo" src="images/logo.png" alt="Blackbird Bookstore Logo"></a>
+        </div>
 
-<div class="box col-start-4 col-end-5" id="burger-nav">
-    <h2 class="hidden">Main Navigation</h2>
-    <button class="hamburger">
-        <img src="images/burger.png" alt="Burger Menu" id="hamburger-image">
-    </button>  
-</div>
-<nav class="burger_menu">
-    <li><a href="index.php">HOME</a></li>
-</nav>
+        <div class="box col-start-4 col-end-5" id="burger-nav">
+            <h2 class="hidden">Main Navigation</h2>
+            <button class="hamburger">
+                <img src="images/burger.png" alt="Burger Menu" id="hamburger-image">
+            </button>  
+        </div>
+        <nav class="burger_menu">
+            <li><a href="index.php">HOME</a></li>
+        </nav>
 </header>
 
-<section class="grid-con" id="details-section">
+    <main>
+    <section class="grid-con" id="details-section">
 
-<div class = "box col-span-full m-col-span-full l-col-span-full xl-col-span-full book-details">
-<?php
-while($row = mysqli_fetch_array($results)) {
-echo '<div class="books-photo"><img src="images/'.$row['book_image'].'" alt="'.$row['title'].'"></div><div class="books-info"><h2>'.$row['title'].'</h2> <h3>'.$row['name'].'</h3><h4>('.$row['published_date'].')</h4><h5>'.$row['email'].'</h5></div>';
+            <div class = "box col-span-full m-col-span-full l-col-span-full xl-col-span-full book-details">
+            <?php
+            while($row = mysqli_fetch_array($results)) {
+            echo '<div class="books-photo"><img src="images/'.$row['book_image'].'" alt="'.$row['title'].'"></div><div class="books-info"><h2>'.$row['title'].'</h2> <h3>'.$row['name'].'</h3><h4>('.$row['published_date'].')</h4><h5>'.$row['email'].'</h5></div>';
 
-}
-?>
+            }
+            ?>
 
-</div>
-</section>
+            </div>
+    </section>
+    </main> 
 
-</section>
+<script src="js/main.js"></script>
+
 </body>
 </html>
